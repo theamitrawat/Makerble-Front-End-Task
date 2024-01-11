@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl bg-light mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand px-4" href="#">
+                <img src="./assets/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex align-items-center">
+                    <div class="vr"></div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            My apps
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <div class="vr"></div>
+                    <li class="nav-item px-3">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <div class="vr"></div>
+                    <li class="nav-item px-3">
+                        <a class="nav-link active" href="#">Explore</a>
+                    </li>
+                    <div class="vr"></div>
+                    <form class="d-flex mx-2 p-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search for contacts"
+                            aria-label="Search" />
+                    </form>
+                </ul>
+            </div>
+            <div>
+                <div class="d-flex flex-row align-items-center">
+                    <div class="d-flex align-items-center mx-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-bell-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+                        </svg>
+                        <span class="ms-2 badge bg-dark">11</span>
+                    </div>
+                    <div class="d-flex align-items-center mx-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+                    </div>
+                    <div class="d-flex align-items-center mx-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-lightning" viewBox="0 0 16 16">
+                            <path
+                                d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1z" />
+                        </svg>
+                        <span class="ms-2 badge bg-dark">14</span>
+                    </div>
+                    <div class="px-3 border-end border-2 mx-3">
+                        <a href="#" class="text-decoration-none text-dark fw-bold">
+                            <div class="d-flex align-items-center">
+                                <div class="me-2">
+                                    <img src="./assets/dp-image.jpg" alt="..." width="40" height="40"
+                                        class="rounded-circle" />
+                                </div>
+                                <span>theamitrawat</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex gap-2 me-2">
+                        <button type="button" class="btn btn-danger d-flex gap-2 align-items-center fw-bold rounded-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-plus-lg fw-bold" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                            </svg>Create
+                        </button>
+                        <button type="button"
+                            class="btn btn-outline-success d-flex gap-2 align-items-center fw-bold rounded-3 px-2 text-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>Upgrade
+                        </button>
+                        <button type="button"
+                            class="btn btn-outline-info d-flex gap-2 align-items-center fw-bold rounded-3 text-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                            </svg>More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="left-section col-3">
+                <div class="rounded-2 bg-light p-2 mb-4">
+                    <div
+                        class="d-flex justify-content-between align-items-center pb-2 border-bottom border-1 border-secondary">
+                        <a href="#" class="text-decoration-none">
+                            <h5>
+                                <span>15</span>&nbsp;Contacts&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z" />
+                                </svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
+                                </svg>
+                            </h5>
+                        </a>
+                        <button type="button" class="btn btn-primary d-flex gap-1 align-items-center p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                            </svg>New Contact
+                        </button>
+                    </div>
+                    <div>
+                        <div class="width-100 py-3">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image.png" alt="..." width="60" />
+                                <span>herry</span>
+                            </a>
+                        </div>
+                        <div class="width-100 py-3">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image.png" alt="..." width="60" />
+                                <span>siyamodit</span>
+                            </a>
+                        </div>
+                        <div class="width-100 py-3">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image.png" alt="..." width="60" />
+                                <span>Clair</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center p-2">
+                        <a href="#" class="text-decoration-none">
+                            <span>Show All</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="rounded-2 bg-light p-2 mb-4">
+                    <div
+                        class="d-flex justify-content-between align-items-center pb-2 border-bottom border-1 border-secondary">
+                        <a href="#" class="text-decoration-none">
+                            <h5>Projects</h5>
+                        </a>
+                        <button type="button" class="btn btn-primary d-flex gap-1 align-items-center p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                            </svg>New Projects
+                        </button>
+                    </div>
+                    <div>
+                        <div class="width-100 py-3 d-flex justify-content-between align-items-center px-2">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image2.png" alt="..." width="60" />
+                                <span>4359 test</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="width-100 py-3 d-flex justify-content-between align-items-center px-2">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image2.png" alt="..." width="60" />
+                                <span>a test 5146</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="width-100 py-3 d-flex justify-content-between align-items-center px-2">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image2.png" alt="..." width="60" />
+                                <span>A Training Project</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center p-2">
+                        <a href="#" class="text-decoration-none">
+                            <span>Show All</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="rounded-2 bg-light p-2 mb-4">
+                    <div
+                        class="d-flex justify-content-between align-items-center pb-2 border-bottom border-1 border-secondary">
+                        <a href="#" class="text-decoration-none">
+                            <h5>Albums</h5>
+                        </a>
+                        <button type="button" class="btn btn-primary d-flex gap-1 align-items-center p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                            </svg>New Album
+                        </button>
+                    </div>
+                    <div>
+                        <div class="width-100 py-3 d-flex justify-content-between align-items-center px-2">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image.png" alt="..." width="60" />
+                                <span>2021 Portfolio</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="width-100 py-3 d-flex justify-content-between align-items-center px-2">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image.png" alt="..." width="60" />
+                                <span>All Partners</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="width-100 py-3 d-flex justify-content-between align-items-center px-2">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image3.png" alt="..." width="60" />
+                                <span>Big Lotery Funds</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center p-2">
+                        <a href="#" class="text-decoration-none">
+                            <span>Show All</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="rounded-2 bg-light p-2 mb-4">
+                    <div
+                        class="d-flex justify-content-between align-items-center pb-2 border-bottom border-1 border-secondary">
+                        <a href="#" class="text-decoration-none">
+                            <h5>Organisation</h5>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="width-100 py-3 d-flex justify-content-between align-items-center px-2">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image4.png" alt="..." width="60" />
+                                <div class="d-flex flex-column">
+                                    <span>An Organisation Demo</span>
+                                    <span class="text-dark">Admin</span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="width-100 py-3 d-flex justify-content-between align-items-center px-2">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image5.png" alt="..." width="60" />
+                                <div class="d-flex flex-column">
+                                    <span>A Showcase International Development Education
+                                        Charity</span>
+                                    <span class="text-dark">Member</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="width-100 py-3 d-flex justify-content-between align-items-center px-2">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image6.png" alt="..." width="60" />
+                                <div class="d-flex flex-column">
+                                    <span>Oak Tree Secondary School</span>
+                                    <span class="text-dark">Admin</span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center p-2">
+                        <a href="#" class="text-decoration-none">
+                            <span>Show All</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="rounded-2 bg-light p-2 mb-4">
+                    <div
+                        class="d-flex justify-content-between align-items-center pb-2 border-bottom border-1 border-secondary">
+                        <a href="#" class="text-decoration-none">
+                            <h5>Followers</h5>
+                        </a>
+                    </div>
+                    <div class="p-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#"><img src="./assets/dp-image2.jpg" width="50" height="50" alt="..."
+                                    class="rounded-circle border border-2 border-secondary"></a>
+                            <a href="#"><img src="./assets/dp-image3.jpg" width="50" height="50" alt="..."
+                                    class="rounded-circle border border-2 border-secondary"></a>
+                            <a href="#"><img src="./assets/dp-image4.jpg" width="50" height="50" alt="..."
+                                    class="rounded-circle border border-2 border-secondary"></a>
+                            <a href="#"><img src="./assets/dp-image5.jpg" width="50" height="50" alt="..."
+                                    class="rounded-circle border border-2 border-secondary"></a>
+                            <a href="#"><img src="./assets/dp-image6.jpg" width="50" height="50" alt="..."
+                                    class="rounded-circle border border-2 border-secondary"></a>
+                            <a href="#"><img src="./assets/dp-image7.jpg" width="50" height="50" alt="..."
+                                    class="rounded-circle border border-2 border-secondary"></a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center p-2">
+                        <a href="#" class="text-decoration-none">
+                            <span>Show All</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="rounded-2 bg-light p-2 mb-4">
+                    <div
+                        class="d-flex justify-content-between align-items-center pb-2 border-bottom border-1 border-secondary">
+                        <a href="#" class="text-decoration-none">
+                            <h5>People You Follow</h5>
+                        </a>
+                    </div>
+                    <div class="p-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#"><img src="./assets/dp-image8.jpg" width="50" height="50" alt="..."
+                                    class="rounded-circle border border-2 border-secondary"></a>
+                            <a href="#"><img src="./assets/dp-image9.jpg" width="50" height="50" alt="..."
+                                    class="rounded-circle border border-2 border-secondary"></a>
+                            <a href="#"><img src="./assets/dp-image10.jpg" width="50" height="50" alt="..."
+                                    class="rounded-circle border border-2 border-secondary"></a>
+                            <a href="#"><img src="./assets/dp-image11.jpg" width="50" height="50" alt="..."
+                                    class="rounded-circle border border-2 border-secondary"></a>
+                            <a href="#"><img src="./assets/dp-image3.jpg" width="50" height="50" alt="..."
+                                    class="rounded-circle border border-2 border-secondary"></a>
+                            <a href="#"><img src="./assets/dp-image6.jpg" width="50" height="50" alt="..."
+                                    class="rounded-circle border border-2 border-secondary"></a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center p-2">
+                        <a href="#" class="text-decoration-none">
+                            <span>Show All</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-section col-6">
+                <div class="container-fluid bg-light p-2 rounded-3 mb-4">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 input-sm rounded-3" type="Search" placeholder="Search"
+                            aria-label="Search" />
+                        <button type="button" class="btn btn-danger">Post</button>
+                    </form>
+                </div>
+                <div class="rounded-2 p-2">
+                    <div
+                        class="d-flex justify-content-start align-items-center pb-2 border-bottom border-1 border-secondary bg-light rounded-top p-3">
+                        <h3>News Feed</h3>
+                    </div>
+
+                    <div class="py-3 px-2 position-relative bg-light mb-4">
+                        <h5 class="edit position-absolute text-secondary">Edited <span>1</span> day ago</h5>
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex gap-2 align-items-start">
+                                <img src="./assets/dp-image.jpg" alt="..." width="70" height="70" class="mt-2" />
+                                <div class="d-flex flex-column">
+                                    <span class="fs-5 text-primary">theamitrawat</span>
+                                    <span>Activity happened on <span>4th</span><span>Dec</span><span>2023</span></span>
+                                    <span>first Posted at
+                                        <span>16:13</span><span>11th</span><span>Dec</span><span>2023</span></span>
+                                    <span>Activity happened at
+                                        <span>16:13</span><span>11th</span><span>Dec</span><span>2023</span></span>
+                                    <h6>
+                                        <span class="badge bg-info my-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                            </svg>
+                                            <span>stories-spreadsheets-import-at-10-43-on-11-December-2023</span>
+                                        </span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-primary my-3">
+                            <p>
+                                New Update <span class="text-dark">by</span> theamitrawat
+                                <span class="text-dark">working on the</span> Using Football
+                                to teach life skills to children
+                                <span class="text-dark">for</span> An Organisation Demo
+                                <span class="text-dark">with</span><br />
+                                sofia
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center my-3">
+                            <button type="button" class="btn btn-success">
+                                Expand Story
+                            </button>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-heart text-danger" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </span>
+                            <div class="d-flex gap-3">
+                                <span>
+                                    <span>0</span>
+                                    <span>Comments</span>
+                                </span>
+                                <span>
+                                    <span>0</span>
+                                    <span>Favourites</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bg-light mt-4">
+                            <form class="d-flex" role="search">
+                                <a href="#" class="me-4">
+                                    <img src="./assets/dp-image.jpg" alt="..." width="40" height="40" />
+                                </a>
+                                <input class="form-control input-sm rounded-5 mx-5" type=" search"
+                                    placeholder="write a comment" aria-label="Search" />
+                                <button type="button" class="btn btn-danger ms-4">Post</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="py-3 px-2 position-relative bg-light mb-4">
+                        <h5 class="edit position-absolute text-secondary">Edited <span>1</span> day ago</h5>
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex gap-2 align-items-start">
+                                <img src="./assets/dp-image.jpg" alt="..." width="70" height="70" class="mt-2" />
+                                <div class="d-flex flex-column">
+                                    <span class="fs-5 text-primary">theamitrawat</span>
+                                    <span>Activity happened on <span>4th</span><span>Dec</span><span>2023</span></span>
+                                    <span>first Posted at
+                                        <span>16:13</span><span>11th</span><span>Dec</span><span>2023</span></span>
+                                    <span>Activity happened at
+                                        <span>16:13</span><span>11th</span><span>Dec</span><span>2023</span></span>
+                                    <h6>
+                                        <span class="badge bg-success my-1 width">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                            </svg>
+                                            <span>PHQ9</span>
+                                        </span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-primary my-3">
+                            <p>
+                                New Update <span class="text-dark">by</span> theamitrawat
+                                <span class="text-dark">working on the</span> Using Football
+                                to teach life skills to children
+                                <span class="text-dark">for</span> An Organisation Demo
+                                <span class="text-dark">with</span><br />
+                                sofia
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center my-3">
+                            <button type="button" class="btn btn-success">
+                                Expand Story
+                            </button>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-heart text-danger" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </span>
+                            <div class="d-flex gap-3">
+                                <span>
+                                    <span>0</span>
+                                    <span>Comments</span>
+                                </span>
+                                <span>
+                                    <span>0</span>
+                                    <span>Favourites</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bg-light mt-4">
+                            <form class="d-flex" role="search">
+                                <a href="#" class="me-4">
+                                    <img src="./assets/dp-image.jpg" alt="..." width="40" height="40" />
+                                </a>
+                                <input class="form-control input-sm rounded-5 mx-5" type=" search"
+                                    placeholder="write a comment" aria-label="Search" />
+                                <button type="button" class="btn btn-danger ms-4">Post</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="py-3 px-2 position-relative bg-light mb-4">
+                        <h5 class="edit position-absolute text-secondary">Edited <span>1</span> day ago</h5>
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex gap-2 align-items-start">
+                                <img src="./assets/dp-image.jpg" alt="..." width="70" height="70" class="mt-2" />
+                                <div class="d-flex flex-column">
+                                    <span class="fs-5 text-primary">theamitrawat</span>
+                                    <span>first Posted at
+                                        <span>16:13</span><span>11th</span><span>Dec</span><span>2023</span></span>
+                                    <span>Activity happened at
+                                        <span>16:13</span><span>11th</span><span>Dec</span><span>2023</span></span>
+                                    <h6>
+                                        <span class="badge bg-success my-1 width">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                            </svg>
+                                            <span>PHQ9</span>
+                                        </span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-primary my-3">
+                            <p>
+                                New Update <span class="text-dark">by</span> theamitrawat
+                                <span class="text-dark">working on the</span> Using Football
+                                to teach life skills to children
+                                <span class="text-dark">for</span> An Organisation Demo
+                                <span class="text-dark">with</span><br />
+                                sofia
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center my-3">
+                            <button type="button" class="btn btn-success">
+                                Expand Story
+                            </button>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-heart text-danger" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </span>
+                            <div class="d-flex gap-3">
+                                <span>
+                                    <span>0</span>
+                                    <span>Comments</span>
+                                </span>
+                                <span>
+                                    <span>0</span>
+                                    <span>Favourites</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bg-light mt-4">
+                            <form class="d-flex" role="search">
+                                <a href="#" class="me-4">
+                                    <img src="./assets/dp-image.jpg" alt="..." width="40" height="40" />
+                                </a>
+                                <input class="form-control input-sm rounded-5 mx-5" type=" search"
+                                    placeholder="write a comment" aria-label="Search" />
+                                <button type="button" class="btn btn-danger ms-4">Post</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="py-3 px-2 position-relative bg-light mb-4">
+                        <h5 class="edit position-absolute text-secondary">Edited <span>1</span> day ago</h5>
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex gap-2 align-items-start">
+                                <img src="./assets/id-image.png" alt="..." width="70" height="70" class="mt-2" />
+                                <div class="d-flex flex-column">
+                                    <span class="fs-5 text-primary">Respodent</span>
+                                    <span>first Posted at
+                                        <span>16:13</span><span>11th</span><span>Dec</span><span>2023</span></span>
+                                    <span>Activity happened at
+                                        <span>16:13</span><span>11th</span><span>Dec</span><span>2023</span></span>
+                                    <h6>
+                                        <span class="badge bg-purple my-1 width">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                            </svg>
+                                            <span>Weekly Register</span>
+                                        </span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-primary my-3">
+                            <p>
+                                New Update <span class="text-dark">by</span> Respodent
+                                <span class="text-dark">working at </span> Money Management <span
+                                    class="text-dark">starting at 14:30 on 28th November 2023 on </span>Using football
+                                to teach life skills to children for An Organisation Demo <span
+                                    class="text-dark">with</span> A11 Frank
+                            </p>
+                        </div>
+                        <div>
+                            <span>yes</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center my-3">
+                            <button type="button" class="btn btn-success">
+                                Expand Story
+                            </button>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-heart text-danger" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </span>
+                            <div class="d-flex gap-3">
+                                <span>
+                                    <span>0</span>
+                                    <span>Comments</span>
+                                </span>
+                                <span>
+                                    <span>0</span>
+                                    <span>Favourites</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bg-light mt-4">
+                            <form class="d-flex" role="search">
+                                <a href="#" class="me-4">
+                                    <img src="./assets/dp-image.jpg" alt="..." width="40" height="40" />
+                                </a>
+                                <input class="form-control input-sm rounded-5 mx-5" type=" search"
+                                    placeholder="write a comment" aria-label="Search" />
+                                <button type="button" class="btn btn-danger ms-4">Post</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="py-3 px-2 position-relative bg-light mb-4">
+                        <h5 class="edit position-absolute text-secondary">Edited <span>1</span> day ago</h5>
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex gap-2 align-items-start">
+                                <img src="./assets/dp-image.jpg" alt="..." width="70" height="70" class="mt-2" />
+                                <div class="d-flex flex-column">
+                                    <span class="fs-5 text-primary">theamitrawat</span>
+                                    <span>first Posted at
+                                        <span>16:13</span><span>11th</span><span>Dec</span><span>2023</span></span>
+                                    <span>Activity happened at
+                                        <span>16:13</span><span>11th</span><span>Dec</span><span>2023</span></span>
+                                    <h6>
+                                        <span class="badge bg-primary my-1 width">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                            </svg>
+                                            <span>Update</span>
+                                        </span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-primary my-3">
+                            <p>
+                                1 Attendees <span class="text-dark">by</span> theamitrawat
+                                <span class="text-dark">working on the</span> Using music
+                                to deliver positive outcomes for vulnerable young pople
+                                <span class="text-dark">project for</span> An Organisation Demo
+                                <span class="text-dark">with</span><br />
+                                Abigal Holmes
+                            </p>
+                        </div>
+                        <div>
+                            <span>new update</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center my-3">
+                            <button type="button" class="btn btn-success">
+                                Expand Story
+                            </button>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-heart text-danger" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </span>
+                            <div class="d-flex gap-3">
+                                <span>
+                                    <span>0</span>
+                                    <span>Comments</span>
+                                </span>
+                                <span>
+                                    <span>0</span>
+                                    <span>Favourites</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bg-light mt-4">
+                            <form class="d-flex" role="search">
+                                <a href="#" class="me-4">
+                                    <img src="./assets/dp-image.jpg" alt="..." width="40" height="40" />
+                                </a>
+                                <input class="form-control input-sm rounded-5 mx-5" type=" search"
+                                    placeholder="write a comment" aria-label="Search" />
+                                <button type="button" class="btn btn-danger ms-4">Post</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="btn btn-primary" type="button">Load More..</button>
+                </div>
+            </div>
+            <div class="right-section col-3">
+                <div class="rounded-2 bg-light p-2 mb-4">
+                    <div
+                        class="d-flex justify-content-between align-items-center pb-2 border-bottom border-1 border-secondary">
+                        <a href="#" class="text-decoration-none">
+                            <h5>Boards</h5>
+                        </a>
+                        <button type="button" class="btn btn-primary d-flex gap-1 align-items-center p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                            </svg>New Board
+                        </button>
+                    </div>
+                    <div>
+                        <div class="width-100 py-3">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image.png" alt="..." width="60" />
+                                <span>Angola Production</span>
+                            </a>
+                        </div>
+                        <div class="width-100 py-3">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image.png" alt="..." width="60" />
+                                <span>Attendence Reporting</span>
+                            </a>
+                        </div>
+                        <div class="width-100 py-3">
+                            <a href="#" class="text-decoration-none d-flex gap-2 align-items-center">
+                                <img src="./assets/id-image.png" alt="..." width="60" />
+                                <span>CHIVA RYH</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center p-2">
+                        <a href="#" class="text-decoration-none">
+                            <span>Show All</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="rounded-2 bg-light p-2 mb-4">
+                    <div
+                        class="d-flex justify-content-between align-items-center pb-2 border-bottom border-1 border-secondary">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <h5>Personal Progress</h5>
+                        </a>
+                        <a href="/" class="text-decoration-none">
+                            <span>Go to Board</span>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column gap-4 p-4">
+                        <div class="d-flex gap-4 align-items-center justify-content-between">
+                            <img src="./assets/circle1.png" alt="..." height="70" width="70" class="rounded-circle">
+                            <div class="d-flex flex-column gap-2 align-items-start">
+                                <span>.Are either of your parents living?</span>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-success" style="width: 75%">7</div>
+                                </div>
+                            </div>
+                            <div class="text-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-file-plus-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4 align-items-center justify-content-between">
+                            <img src="./assets/circle2.png" alt="..." height="70" width="70" class="rounded-circle">
+                            <div class="d-flex flex-column gap-2 align-items-start">
+                                <span>.Do you belong to any groups in whi...</span>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-primary" style="width: 75%">7</div>
+                                </div>
+                            </div>
+                            <div class="text-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-file-plus-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4 align-items-center justify-content-between">
+                            <img src="./assets/circle3.png" alt="..." height="70" width="70" class="rounded-circle">
+                            <div class="d-flex flex-column gap-2 align-items-start">
+                                <span>1-2-1 Events</span>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 50%">5</div>
+                                </div>
+                            </div>
+                            <div class="text-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-file-plus-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center p-2">
+                        <a href="#" class="text-decoration-none">
+                            <span>Show All</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="rounded-2 bg-light p-2 mb-4">
+                    <div
+                        class="d-flex justify-content-between align-items-center pb-2 border-bottom border-1 border-secondary">
+                        <a href="#" class="text-decoration-none">
+                            <h5>Tasks</h5>
+                        </a>
+                        <div class="d-flex gap-2 align-items-center">
+                            <div class="border border-1 border-dark p-2 rounded-3"><span>25</span> To Do</div>
+                            <div class="vr"></div>
+                            <div class="bg-secondary p-1 rounded-3 text-light"><span>43</span> Done</div>
+                        </div>
+                        <button type="button" class="btn btn-info d-flex gap-1 align-items-center px-2 py-1 text-light">
+                            Filters
+                        </button>
+                    </div>
+                    <div>
+                        <div class="container-fluid p-2 rounded-3 my-4">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2 input-sm rounded-3" type="Search"
+                                    placeholder="Add your next task" aria-label="Search" />
+                                <button type="button" class="btn btn-danger ">Save&nbsp;Task</button>
+                            </form>
+                        </div>
+                        <div>
+                            <div class="todo-box border border-2 border-dark p-2 my-2">
+                                <form class="d-flex align-items-center gap-2" role="search">
+                                    <input class="form-control me-2 input-sm rounded-3" type="text"
+                                        placeholder="Add your next task" aria-label="Search" />
+
+                                    <input class="form-check-input border-" type="checkbox" value=""
+                                        id="flexCheckCheckedDisabled">
+                                    <a href="#" class="text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                        </svg>
+                                    </a>
+                                </form>
+                            </div>
+
+                            <div class="todo-box border border-2 border-primary p-2 my-2">
+                                <form class="d-flex align-items-center gap-2" role="search">
+                                    <input class="form-control me-2 input-sm rounded-3" type="text"
+                                        placeholder="Add your next task" aria-label="Search" />
+
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckCheckedDisabled">
+                                    <a href="#" class="text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                        </svg>
+                                    </a>
+                                </form>
+                            </div>
+
+                            <div class="todo-box border border-2 border-info p-2 my-2">
+                                <form class="d-flex align-items-center gap-2" role="search">
+                                    <input class="form-control me-2 input-sm rounded-3" type="text"
+                                        placeholder="Add your next task" aria-label="Search" />
+
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckCheckedDisabled">
+                                    <a href="#" class="text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                        </svg>
+                                    </a>
+                                </form>
+                            </div>
+
+                            <div class="todo-box border border-2 border-warning p-2 my-2">
+                                <form class="d-flex align-items-center gap-2" role="search">
+                                    <input class="form-control me-2 input-sm rounded-3" type="text"
+                                        placeholder="Add your next task" aria-label="Search" />
+
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckCheckedDisabled">
+                                    <a href="#" class="text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                        </svg>
+                                    </a>
+                                </form>
+                            </div>
+
+                            <div class="todo-box border border-2 border-success p-2 my-2">
+                                <form class="d-flex align-items-center gap-2" role="search">
+                                    <input class="form-control me-2 input-sm rounded-3" type="text"
+                                        placeholder="Add your next task" aria-label="Search" />
+
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckCheckedDisabled">
+                                    <a href="#" class="text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                        </svg>
+                                    </a>
+                                </form>
+                            </div>
+
+                            <div class="todo-box border border-2 p-2 my-2 border-danger">
+                                <form class="d-flex align-items-center gap-2" role="search">
+                                    <input class="form-control me-2 input-sm rounded-3" type="text"
+                                        placeholder="Add your next task" aria-label="Search" />
+
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckCheckedDisabled">
+                                    <a href="#" class="text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                        </svg>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center pt-2">
+                        <ul class="pagination">
+                            <li class="page-item border-secondary"><a class="page-link text-secondary" href="#">←
+                                    Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next →</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-4 p-5 border-top border-5 border-warning">
+        <div class="d-flex justify-content-between align-items-start px-5">
+            <div>
+                <h1>Makerble</h1>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/">About Us</a></li>
+                    <li class="mb-2"><a href="/">Term & Conditions</a></li>
+                    <li class="mb-2"><a href="/">Privacy & Cookies</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>ORGANISATION</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/">Control Panel</a></li>
+                    <li class="mb-2"><a href="/">Discover the Marketplace</a></li>
+                    <li class="mb-2"><a href="/">Create Organisation Account</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>YOUR ACCOUNT</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/">Library</a></li>
+                    <li class="mb-2"><a href="/">Profile</a></li>
+                    <li class="mb-2"><a href="/">Projects</a></li>
+                    <li class="mb-2"><a href="/">Help</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>EXPLORE</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/">Metrics</a></li>
+                    <li class="mb-2"><a href="/">Networks</a></li>
+                    <li class="mb-2"><a href="/">Strategies</a></li>
+                    <li class="mb-2"><a href="/">Projects</a></li>
+                    <li class="mb-2"><a href="/">Studies</a></li>
+                    <li class="mb-2"><a href="/">Surveys</a></li>
+                    <li class="mb-2"><a href="/">Tips</a></li>
+                    <li class="mb-2"><a href="/">Vouchers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>FOLLOW THE MAKERBLE STORY</h4>
+                <div class="d-flex gap-5 align-items-center mt-4">
+                    <a href="#" class="text-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-warning">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-camera" viewBox="0 0 16 16">
+                            <path
+                                d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z" />
+                            <path
+                                d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="#"><span>Contact Us</span></a>
+            <div class="d-flex gap-5">
+                <a href="#"><span>contact@Makerble.com</span></a>
+                <a href="#">02434-34345-234532</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

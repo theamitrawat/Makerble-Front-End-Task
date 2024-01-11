@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(205, 205, 205);
+}
+
+.edit {
+    top: 15%;
+    right: 10%;
+}
+
+.bg-purple {
+    background-color: #dc1acf;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(94, 92, 92);
+}
+
+.progress {
+    width: 10vw;
+}
+
+.todo-box form input[type="text"]{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.todo-box form input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    border-color: black;
+}
